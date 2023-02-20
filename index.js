@@ -1,5 +1,5 @@
 // link to page creation
-const generateHTML = require('./src/generateHTML');
+const createHTML = require('./src/createHTML');
 
 // team profiles
 const Manager = require('./lib/Manager');
@@ -204,7 +204,7 @@ const writeFile = data => {
             return;
         // when the profile has been created 
         } else {
-            console.log("Your team profile has been successfully created! Please check out the index.html")
+            console.log("Your team profile has been successfully created!")
         }
     })
 }; 
