@@ -55,50 +55,41 @@ const generateIntern = function (intern) {
 `;
 }
 
-// push array to page 
-generateHTML = (data) => {
+// Creates employee cards to be generated into HTML
+createHTML = (data) => {
 
-    // array for cards 
-    pageArray = []; 
+    employeeArray = []; 
 
     for (let i = 0; i < data.length; i++) {
         const employee = data[i];
         const role = employee.getRole(); 
 
-
-        // call manager function
+        // Pushes Manager data into array
         if (role === 'Manager') {
             const managerCard = generateManager(employee);
-
-            pageArray.push(managerCard);
+            employeeArray.push(managerCard);
         }
 
-        // call engineer function
+        // Pushes Engineer data into array
         if (role === 'Engineer') {
             const engineerCard = generateEngineer(employee);
-
-            pageArray.push(engineerCard);
+            employeeArray.push(engineerCard);
         }
 
-        // call intern function 
+        // Pushes Intern data into array
         if (role === 'Intern') {
             const internCard = generateIntern(employee);
-
-            pageArray.push(internCard);
-        }
-        
+            employeeArray.push(internCard);
+        }        
     }
 
-    // joining strings 
-    const employeeCards = pageArray.join('')
-
-    // return to generated page
+    const employeeCards = employeeArray.join('')
     const generateTeam = generateTeamPage(employeeCards); 
     return generateTeam;
 
 }
 
-// generate html page 
+// Creates HTML page with employee data
 const generateTeamPage = function (employeeCards) {   
   return`
 <!DOCTYPE html>
@@ -125,7 +116,6 @@ const generateTeamPage = function (employeeCards) {
       <main>
           <div class="container">
               <div class="row" id="team-cards">
-                  <!--Team Cards-->
                   ${employeeCards}
               </div>
           </div>
@@ -139,4 +129,4 @@ const generateTeamPage = function (employeeCards) {
 }
 
 
-module.exports = createHTML; 
+module.exports = createHTML;

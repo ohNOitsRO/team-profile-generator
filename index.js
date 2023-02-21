@@ -6,7 +6,6 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern'); 
 
-// team array
 const teamData = []; 
 
 // Function of Manager prompts
@@ -19,12 +18,10 @@ const addManager = () => {
             validate: nameInput => {
                 if (nameInput) {
                     return true;
-
                 } 
                 else {
                     console.log ("Please enter the managers name!");
                     return false; 
-
                 }
             }
         },
@@ -36,7 +33,8 @@ const addManager = () => {
                 if  (isNaN(nameInput)) {
                     console.log ("Please enter the manager's ID!")
                     return false; 
-                } else {
+                } 
+                else {
                     return true;
                 }
             }
@@ -49,7 +47,8 @@ const addManager = () => {
                 valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
                 if (valid) {
                     return true;
-                } else {
+                } 
+                else {
                     console.log ('Please enter the managers email!')
                     return false; 
                 }
@@ -63,7 +62,8 @@ const addManager = () => {
                 if  (isNaN(nameInput)) {
                     console.log ('Please enter the managers office number!')
                     return false; 
-                } else {
+                } 
+                else {
                     return true;
                 }
             }
@@ -73,11 +73,9 @@ const addManager = () => {
         const  {name, id, email, officeNumber} = managerInput; 
         const manager = new Manager (name, id, email, officeNumber);
 
-        teamData.push(manager); 
-        console.log(manager); 
+        teamData.push(manager);
     })
 };
-
 
 // Function of Employee prompts
 const addEmployee = () => {
@@ -101,7 +99,8 @@ const addEmployee = () => {
             validate: nameInput => {
                 if (nameInput) {
                     return true;
-                } else {
+                } 
+                else {
                     console.log ("Please enter an employees name!");
                     return false; 
                 }
@@ -115,7 +114,8 @@ const addEmployee = () => {
                 if  (isNaN(nameInput)) {
                     console.log ("Please enter the employees ID!")
                     return false; 
-                } else {
+                } 
+                else {
                     return true;
                 }
             }
@@ -128,7 +128,8 @@ const addEmployee = () => {
                 valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
                 if (valid) {
                     return true;
-                } else {
+                } 
+                else {
                     console.log ('Please enter the employees email!')
                     return false; 
                 }
@@ -142,7 +143,8 @@ const addEmployee = () => {
             validate: nameInput => {
                 if (nameInput) {
                     return true;
-                } else {
+                } 
+                else {
                     console.log ("Please enter the employees github username!")
                 }
             }
@@ -155,7 +157,8 @@ const addEmployee = () => {
             validate: nameInput => {
                 if (nameInput) {
                     return true;
-                } else {
+                } 
+                else {
                     console.log ("Please enter the interns school!")
                 }
             }
@@ -174,19 +177,16 @@ const addEmployee = () => {
         if (role === "Engineer") {
             employee = new Engineer (name, id, email, github);
 
-            console.log(employee);
-
         } 
         else if (role === "Intern") {
             employee = new Intern (name, id, email, school);
 
-            console.log(employee);
         }
 
         teamData.push(employee); 
 
         if (confirmAddEmployee) {
-            return addEmployee(teamData); 
+            return addEmployee(teamData);
 
         } 
         else {
@@ -197,8 +197,7 @@ const addEmployee = () => {
 
 };
 
-
-// function to create HTML page
+// Function to create HTML page
 const writeFile = data => {
     fs.writeFile('./dist/index.html', data, err => {
         if (err) {
