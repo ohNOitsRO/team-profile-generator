@@ -3,6 +3,7 @@ nav {
     justify-content: center;
     background-color: transparent;
     box-shadow: none;
+    
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     background-size: cover;
     min-width: 1024px;
     height: max-content;
+    
 }
 
 .row {
