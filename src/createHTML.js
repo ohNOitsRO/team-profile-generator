@@ -1,4 +1,4 @@
-// create Manager card
+// creates Manager card
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
@@ -17,7 +17,7 @@ const generateManager = function (manager) {
     `;
 }
 
-// create Engineer card
+// creates Engineer card
 const generateEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
@@ -36,7 +36,7 @@ const generateEngineer = function (engineer) {
     `
 }
 
-// create Intern card 
+// creates Intern card 
 const generateIntern = function (intern) {
     return `
     <div class="col-4 mt-4">

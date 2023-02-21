@@ -1,21 +1,21 @@
-// using Intern constructor 
+// Intern constructor 
 const Intern = require('../lib/Intern');
 
-// creating intern object  
+// creates the Intern object  
 test('creates an Intern object', () => {
     const intern = new Intern('Maximus', 24, 'dasupermax@gmail.com', 'UM');
     
     expect(intern.school) .toEqual(expect.any(String));
 });
 
-// gets school from getSchool()
-test('gets employee school', () => {
+// checks for Intern school
+test('gets intern school', () => {
     const intern = new Intern('Maximus', 24, 'dasupermax@gmail.com', 'UM');
     
     expect(intern.getSchool()).toEqual(expect.stringContaining(intern.school.toString()));
 });
 
-// gets role from getRole()
+// checks for Intern role
 test('gets role of employee', () => {
     const intern = new Intern('Maximus', 24, 'dasupermax@gmail.com', 'UM');
 
