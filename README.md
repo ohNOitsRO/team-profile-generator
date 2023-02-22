@@ -2,9 +2,9 @@
 
 ## Description
 
-A simple CLI application that helps you build an employee team page.  Quickly generate an HTML template with information gathered from user inputs for a Manager, Engineers and Interns.  
+A simple CLI node application that helps you build an employee team page.  Quickly generate an HTML template with information gathered from user inputs for a Manager, Engineers and Interns.  
 
-Check out the webapge: https://ohNOitsRo.github.io/weather-dashboard
+Check out the webapge: https://ohNOitsRo.github.io/team-profile-generator
 
 ## Table of Contents
 
@@ -15,25 +15,22 @@ Check out the webapge: https://ohNOitsRo.github.io/weather-dashboard
 
 ## Installation
 
-N/A
+Install the node packages with "npm i" within the application directory.
+Run the application with "node index" in the terminal command line.
 
 ## Usage
 
 Preview of website layout and design.
 
-![Sample Website Preview](./assets/weather-dashboard-demo.PNG)
+![Sample Website Preview](./assets/image/team-profile-generator-demo.PNG)
 
 ## Credits
 
-OpenWeatherMap for their API access.
-https://openweathermap.org/
+Materialize for some beautiful designs.
+https://materializecss.com/
 
-Bootstrap for some beautiful designs.
-https://getbootstrap.com/
-
-jQuery for some functionality.
-https://jquery.com/
-
+Node.js for its CLI capabilities
+https://nodejs.org/en/
 
 ## License
 
