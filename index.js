@@ -44,7 +44,7 @@ const addManager = () => {
             name: 'email',
             message: "Please enter the managers email.",
             validate: email => {
-                valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+                valid = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)
                 if (valid) {
                     return true;
                 } 
