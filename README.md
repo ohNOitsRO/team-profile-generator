@@ -4,8 +4,6 @@
 
 A simple CLI node application that helps you build an employee team page.  Quickly generate an HTML template with information gathered from user inputs for a Manager, Engineers and Interns.  
 
-Check out the webapge: https://ohNOitsRo.github.io/team-profile-generator
-
 ## Table of Contents
 
 - [Installation](#installation)
@@ -16,6 +14,7 @@ Check out the webapge: https://ohNOitsRo.github.io/team-profile-generator
 ## Installation
 
 Install the node packages with "npm i" within the application directory.
+Also, install the inquirer package to correcly run the user prompts with "npm i inquirer@8.2.4"
 Run the application with "node index" in the terminal command line.
 
 ## Usage
