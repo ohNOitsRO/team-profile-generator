@@ -13,9 +13,9 @@ A simple CLI node application that helps you build an employee team page.  Quick
 
 ## Installation
 
-Install the node packages with "npm i" within the application directory.
-Also, install the inquirer package to correcly run the user prompts with "npm i inquirer@8.2.4"
-Run the application with "node index" in the terminal command line.
+Install the node packages with "npm i" within the application directory.  
+Also, install the inquirer package to correcly run the user prompts with "npm i inquirer@8.2.4"  
+Run the application with "node index" in the terminal command line.  
 
 ## Usage
 
@@ -25,10 +25,10 @@ Preview of website layout and design.
 
 ## Credits
 
-Materialize for some beautiful designs.
+Materialize CSS for some beautiful designs.  
 https://materializecss.com/
 
-Node.js for its CLI capabilities
+Node.js for its CLI capabilities  
 https://nodejs.org/en/
 
 ## License
