@@ -1,4 +1,4 @@
-# 10 Team Profile Generator (Module 10 Challenge)
+# Team Profile Generator (Module 10 Challenge)
 
 ## Description
 
