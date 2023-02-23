@@ -23,6 +23,10 @@ Preview of website layout and design.
 
 ![Sample Website Preview](./assets/images/team-profile-generator-demo.PNG)
 
+Link to video demo of application.
+
+https://www.youtube.com/watch?v=G_17Hx0lcC0
+
 ## Credits
 
 Materialize CSS for some beautiful designs.  
