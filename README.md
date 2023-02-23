@@ -21,7 +21,7 @@ Run the application with "node index" in the terminal command line.
 
 Preview of website layout and design.
 
-![Sample Website Preview](./assets/image/team-profile-generator-demo.PNG)
+![Sample Website Preview](./assets/images/team-profile-generator-demo.PNG)
 
 ## Credits
 
