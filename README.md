@@ -25,7 +25,7 @@ Preview of website layout and design.
 
 Link to video demo of application.
 
-https://www.youtube.com/watch?v=G_17Hx0lcC0
+https://www.youtube.com/watch?v=1KRE35_eJPA
 
 ## Credits
 
