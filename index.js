@@ -109,7 +109,7 @@ const newEmployee = () => {
         teamProfile.push(employee); 
 
         if (confirmAdd) {
-            return newEmployee(teamData);
+            return newEmployee(teamProfile);
 
         } 
         else {
