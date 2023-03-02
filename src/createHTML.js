@@ -1,5 +1,5 @@
 // creates Manager card
-const generateManager = function (manager) {
+const createManager = function (manager) {
     return `
 <div class="col s-4 mt-4">
     <div class="card small h-100">
@@ -18,7 +18,7 @@ const generateManager = function (manager) {
 }
 
 // creates Engineer card
-const generateEngineer = function (engineer) {
+const createEngineer = function (engineer) {
     return `
 <div class="col s-4 mt-4">
     <div class="card small h-100">
@@ -37,7 +37,7 @@ const generateEngineer = function (engineer) {
 }
 
 // creates Intern card 
-const generateIntern = function (intern) {
+const createIntern = function (intern) {
     return `
 <div class="col s-4 mt-4">
     <div class="card small h-100">
@@ -56,9 +56,9 @@ const generateIntern = function (intern) {
 }
 
 // Creates employee cards to be generated into HTML
-createHTML = (data) => {
+pageHTML = (data) => {
 
-    employeeArray = []; 
+    employeesArray = []; 
 
     for (let i = 0; i < data.length; i++) {
         const employee = data[i];
@@ -66,31 +66,31 @@ createHTML = (data) => {
 
         // Pushes Manager data into array
         if (role === 'Manager') {
-            const managerCard = generateManager(employee);
-            employeeArray.push(managerCard);
+            const managerCard = createManager(employee);
+            employeesArray.push(managerCard);
         }
 
         // Pushes Engineer data into array
         if (role === 'Engineer') {
-            const engineerCard = generateEngineer(employee);
-            employeeArray.push(engineerCard);
+            const engineerCard = createEngineer(employee);
+            employeesArray.push(engineerCard);
         }
 
         // Pushes Intern data into array
         if (role === 'Intern') {
-            const internCard = generateIntern(employee);
-            employeeArray.push(internCard);
+            const internCard = createIntern(employee);
+            employeesArray.push(internCard);
         }        
     }
 
-    const employeeCards = employeeArray.join('')
-    const generateTeam = generateTeamPage(employeeCards); 
+    const employeeCards = employeesArray.join('')
+    const generateTeam = createTeamPage(employeeCards); 
     return generateTeam;
 
 }
 
 // Creates HTML page with employee data
-const generateTeamPage = function (employeeCards) {   
+const createTeamPage = function (employeeCards) {   
   return`
 <!DOCTYPE html>
 <html lang="en">
@@ -129,4 +129,4 @@ const generateTeamPage = function (employeeCards) {
 }
 
 
-module.exports = createHTML;
+module.exports = pageHTML;
