@@ -36,8 +36,8 @@ const newManager = () => {
             
         }
     ])
-    .then(managerInput => {
-        const  {name, id, email, officeNumber} = managerInput; 
+    .then(managerData => {
+        const  {name, id, email, officeNumber} = managerData; 
         const manager = new Manager (name, id, email, officeNumber);
 
         teamProfile.push(manager);
@@ -133,11 +133,17 @@ const writeFile = data => {
     })
 }; 
 
-newManager()
-  .then(newEmployee)
-  .then(teamProfile => {
-    return pageHTML(teamProfile);
-  })
-  .then(pageHTML => {
-    return writeFile(pageHTML);
-  });
+// Function to initialize app
+const initApp = () => {
+    newManager()
+        .then(newEmployee)
+        .then(teamProfile => { 
+            return pageHTML(teamProfile);
+
+    })
+        .then(pageHTML => {
+            return writeFile(pageHTML);
+
+  })};
+
+  initApp();
